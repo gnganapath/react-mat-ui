@@ -15,7 +15,7 @@ export default function App() {
           <Route exact path="/create" component={Create} />
 
           {/* This is an alternate for point the component to Route */}
-          
+
           {/* <Route exact path="/">
             <Notes />
           </Route>
