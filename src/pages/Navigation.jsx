@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Notes from './Notes';
 import Create from './Create';
 import Typography from '../mat-ui/Typography';
-
+import MatUIButtons from '../mat-ui/ButtonsUI';
 import { Container, makeStyles } from '@material-ui/core';
 
 const useStyles = makeStyles(theme => ({
@@ -35,11 +35,14 @@ function Navigation() {
         <Link to="/Typography" className={classes.menuLink}>
           Typography
         </Link>
+        <Link to="/MatUIButtons" className={classes.menuLink}>
+          Buttons
+        </Link>
         <Switch>
           <Route exact path="/" component={Notes} />
           <Route exact path="/create" component={Create} />
           <Route exact path="/Typography" component={Typography} />
-
+          <Route exact path="/MatUIButtons" component={MatUIButtons} />
           {/* This is an alternate for point the component to Route */}
 
           {/* <Route exact path="/">
