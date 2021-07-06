@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Notes from './Notes';
 import Create from './Create';
+import Typography from '../mat-ui/Typography';
 
 import { Container, makeStyles } from '@material-ui/core';
 
@@ -31,9 +32,13 @@ function Navigation() {
         <Link to="/create" className={classes.menuLink}>
           Create
         </Link>
+        <Link to="/Typography" className={classes.menuLink}>
+          Typography
+        </Link>
         <Switch>
           <Route exact path="/" component={Notes} />
           <Route exact path="/create" component={Create} />
+          <Route exact path="/Typography" component={Typography} />
 
           {/* This is an alternate for point the component to Route */}
 
